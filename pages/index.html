@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+<head>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <meta charset="utf-8"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="Mouminatou, Moe Techtainment,HTML,CSS,Cognitive,JavaScript, Physics, Barry,Leader, STEM,STEAM"/>
+    <meta name="description" content=" 90's Crazy, Let's get Smarter, One Synapse at a Time; using Cognitive & Experimental Learning, encoding audio, visual, and semantic (Science, Tech, Engineering, Arts, Math)"/>
+    <meta name="author" content="Mouminatou Barry, Moe Techtainment"/>
+    <title>Moe Techtainment</title>
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="../src/moeiconb.png">
+    <!-- Bootstrap CSS -->
+    <link rel="science,stem,steam, Mouminatou, united nation,leader">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/materialize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <style type="text/css">
+
+
+    </style>
+</head>
+<body style="background-color:rgb(172, 17, 89);" >
+    <div class="container">
+        <div class="description panel blue" style="text-align: center;">
+            <img src="../src/moetw.png"  height="100px"/>
+              <video src="../src/hook.mov" height="150px" autoplay></video>
+              <div class="scroll-down">
+                <h2>Scroll down</h2>
+                <div class="arrow"></div>
+                </div>
+        </div>
+          
+          <section class="panel red">
+              ONE
+          </section>
+          <section class="panel orange">
+              TWO
+          </section>
+          <section class="panel purple">
+              THREE
+          </section>
+          <section class="panel green">
+              FOUR
+          </section>
+          
+          <div style="background-color: #ffc600;" class="box"><p>mkmkn</p></div>
+      
+    </div>
+      
+<!-- JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script type="text/javascript">
+    gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".panel").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top", 
+    pin: true, 
+    pinSpacing: false 
+  });
+});
+
+
+ScrollTrigger.create({
+  snap: 1 / 4 // snap whole page to the closest section!
+});
+//
+
+ScrollTrigger.create({
+  trigger: "#id",
+  start: "top top",
+  endTrigger: "#otherID",
+  end: "bottom 50%+=100px",
+  onToggle: self => console.log("toggled, isActive:", self.isActive),
+  onUpdate: self => {
+    console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+  }
+});
+//
+gsap.to(".box", {
+  scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
+  x: 200
+});
+</script>  
+</body>
+</html>
+
+
