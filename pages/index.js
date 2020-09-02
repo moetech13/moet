@@ -10,7 +10,9 @@ import Zoom from '@material-ui/core/Zoom';
 
 
 export default function Home() {
-  return (
+  return ( <>
+
+    // 
     <div className={styles.container}>
       <Head >
         <title>Moe Techtainment</title>
@@ -40,7 +42,7 @@ export default function Home() {
         </a>
      
       </footer>
-      <div>
+      {/* <div>
         <a
           href="moetechtainment.com"
           target="_blank"
@@ -48,7 +50,7 @@ export default function Home() {
           Brought to you by{' '}
           <img src="/moetw.png" alt="Moet" height="25px" />
         </a>
-        </div>
-    </div>
+        </div> */}
+    </div> </>
   )
 }

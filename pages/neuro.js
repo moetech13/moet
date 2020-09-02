@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../components/Layout.js'
-// import Sass from '../public/css/sass/materialize.scss'
 
 
-function Nav() {
+function Neuro() {
   return (
 
       <ul>
@@ -40,7 +39,19 @@ function Nav() {
         </li>
       </ul>
       // 
-      
+      <style jsx>{`
+      h1 {
+        color: blue;
+      }
+      div {
+        background: black;
+      }
+      @media (max-width: 600px) {
+        div {
+          background: blue;
+        }
+      }
+    `}</style>
       
       // <div class="nav-wrapper">
       //   <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
@@ -55,4 +66,4 @@ function Nav() {
   )
 }
 
-export default Nav
+export default Neuro
